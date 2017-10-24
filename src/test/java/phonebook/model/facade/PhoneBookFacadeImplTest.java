@@ -15,7 +15,7 @@ import phonebook.model.domain.repository.PhoneBookRepository;
 import phonebook.model.services.PhoneBookRestService;
 
 @Test
-public class TestPhoneBookFacadeImpl {
+public class PhoneBookFacadeImplTest {
 
 	private PhoneBookFacade facade;
 	private PhoneBookRepository repository;
