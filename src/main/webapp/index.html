@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone book with JavaScript</title>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="phonebook.js"></script>
+    <style>
+        div:not(#phoneBook) {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        #phoneBook {
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 2em;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        form > input[type=submit] {
+            padding-left: 2em;
+            padding-right: 2em;
+            margin-bottom: 1em;
+        }
+
+        #sortByName {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="sortByTown">Sort by town</button>
+    <button id="sortByName">Sort by name</button>
+    <br/>
+    <input type="text" id="searchName" placeholder="Search by name"/>
+    or
+    <input type="text" id="searchPhone" placeholder="Search by telephone number"/>
+    <div id="phoneBook">
+    </div>
+</div>
+</body>
+</html>
